@@ -18,7 +18,7 @@ Poniżej przy każdym ujęciu podaję gotowy prompt **już z prefiksem** — wys
 
 | Postać | Opis (EN, do promptów) |
 |---|---|
-| **WANDZIA** | a cheerful little cartoon girl, the main heroine `[do weryfikacji — brak konceptu Wandzi w przekazanych materiałach; wklej tu 1–2 zdania opisu jej designu]` |
+| **WANDZIA** | a confident little cartoon girl about 6–7 years old with a black chin-length bob haircut with straight bangs, big dark round eyes and a friendly smirk, wearing an oversized V-neck sweater over a t-shirt, loose knee-length cargo shorts and chunky high-top sneakers |
 | **BAJTEK** | a friendly retro toy robot with a boxy body, a big letter "B" badge on his chest, a screen face with smiling eyes, jointed toy limbs and a wind-up key on his back |
 | **CHMURKA** | a small fluffy cloud creature shaped like a smiling kitten head, with cat ears, big round eyes, whiskers and tiny outstretched gloved arms, floating in the air |
 | **LATARKA** | a vintage flat pocket flashlight character with one huge round lens as a single eye, a small smiling mouth, thin bent-wire arms and legs and cartoon gloves |
@@ -35,7 +35,7 @@ Poniżej przy każdym ujęciu podaję gotowy prompt **już z prefiksem** — wys
 
 **PROMPT:**
 
-> Black and white pencil storyboard sketch, rough graphite pencil lines, loose gestural hand-drawn style, light cross-hatching for shading, white paper background, single cinematic 16:9 storyboard panel with a thin hand-drawn frame border, professional animation storyboard, no color, no text, no watermark. Medium shot: a cheerful little cartoon girl (Wanda, the main heroine) peeks out cautiously from behind the edge of a theatre set wall / stage curtain, leaning into frame from the left side, looking directly at the camera (at the cinema audience) with wide excited eyes and a growing smile, hand resting on the edge of the scenery, subtle spotlight shading behind her.
+> Black and white pencil storyboard sketch, rough graphite pencil lines, loose gestural hand-drawn style, light cross-hatching for shading, white paper background, single cinematic 16:9 storyboard panel with a thin hand-drawn frame border, professional animation storyboard, no color, no text, no watermark. Medium shot: a confident little cartoon girl about 6–7 years old with a black chin-length bob haircut with straight bangs, big dark round eyes, wearing an oversized V-neck sweater, loose knee-length cargo shorts and chunky high-top sneakers (Wanda, the main heroine) peeks out cautiously from behind the edge of a theatre set wall / stage curtain, leaning into frame from the left side, looking directly at the camera (at the cinema audience) with wide excited eyes and a growing smile, hand resting on the edge of the scenery, subtle spotlight shading behind her.
 
 ---
 
@@ -47,7 +47,7 @@ Poniżej przy każdym ujęciu podaję gotowy prompt **już z prefiksem** — wys
 
 **PROMPT:**
 
-> Black and white pencil storyboard sketch, rough graphite pencil lines, loose gestural hand-drawn style, light cross-hatching for shading, white paper background, single cinematic 16:9 storyboard panel with a thin hand-drawn frame border, professional animation storyboard, no color, no text, no watermark. Wide shot of a theatre stage set: a cheerful little cartoon girl stands at frame left while three toy characters slide out one after another from behind her and behind the scenery — a friendly retro boxy toy robot with a "B" badge on his chest stepping out stiffly, a small fluffy cloud creature shaped like a smiling kitten head with tiny arms floating out above him, and a vintage flat pocket flashlight character with one huge round lens eye and thin wire limbs leaning out low near the floor; hand-drawn motion arrows showing each character's entrance direction.
+> Black and white pencil storyboard sketch, rough graphite pencil lines, loose gestural hand-drawn style, light cross-hatching for shading, white paper background, single cinematic 16:9 storyboard panel with a thin hand-drawn frame border, professional animation storyboard, no color, no text, no watermark. Wide shot of a theatre stage set: a little cartoon girl with a black bob haircut with straight bangs, an oversized V-neck sweater, loose cargo shorts and chunky high-top sneakers stands at frame left while three toy characters slide out one after another from behind her and behind the scenery — a friendly retro boxy toy robot with a "B" badge on his chest stepping out stiffly, a small fluffy cloud creature shaped like a smiling kitten head with tiny arms floating out above him, and a vintage flat pocket flashlight character with one huge round lens eye and thin wire limbs leaning out low near the floor; hand-drawn motion arrows showing each character's entrance direction.
 
 ---
 
@@ -95,7 +95,7 @@ Poniżej przy każdym ujęciu podaję gotowy prompt **już z prefiksem** — wys
 
 **PROMPT:**
 
-> Black and white pencil storyboard sketch, rough graphite pencil lines, loose gestural hand-drawn style, light cross-hatching for shading, white paper background, single cinematic 16:9 storyboard panel with a thin hand-drawn frame border, professional animation storyboard, no color, no text, no watermark. Group shot with a camera dolly-in indicated by hand-drawn arrows pointing inward from the frame corners: a cheerful little cartoon girl stands in the center of a theatre stage surrounded by her toy friends — a boxy retro robot with a "B" badge, a fluffy kitten-shaped cloud floating above, a flat vintage flashlight character with one big lens eye, a beach-scene fridge-magnet girl, and a squishy blob monster — all facing the camera, waving and posing happily toward the cinema audience.
+> Black and white pencil storyboard sketch, rough graphite pencil lines, loose gestural hand-drawn style, light cross-hatching for shading, white paper background, single cinematic 16:9 storyboard panel with a thin hand-drawn frame border, professional animation storyboard, no color, no text, no watermark. Group shot with a camera dolly-in indicated by hand-drawn arrows pointing inward from the frame corners: a little cartoon girl with a black chin-length bob haircut with straight bangs, wearing an oversized V-neck sweater, loose knee-length cargo shorts and chunky high-top sneakers, stands in the center of a theatre stage with one hand on her hip, surrounded by her toy friends — a boxy retro robot with a "B" badge, a fluffy kitten-shaped cloud floating above, a flat vintage flashlight character with one big lens eye, a beach-scene fridge-magnet girl, and a squishy blob monster — all facing the camera, waving and posing happily toward the cinema audience.
 
 ---
 
@@ -113,7 +113,6 @@ Poniżej przy każdym ujęciu podaję gotowy prompt **już z prefiksem** — wys
 
 ## Notatki produkcyjne
 
-1. **Wandzia** — w przekazanych konceptach nie było jej projektu. Przed generacją wklej do promptów 1, 2 i 6 krótki opis jej wyglądu (fryzura, strój, proporcje), inaczej model wymyśli własny design.
-2. Spójność stylu: generować wszystkie panele w jednej sesji / z tym samym prefiksem stylu; ewentualnie dodać do promptu „same character design as previous panel".
-3. Napisy i dialogi nie powinny być renderowane w obrazkach (modele psują litery) — dialogi trzymamy w opisach pod panelami, tekst planszy wchodzi w poście.
-4. Timing jest orientacyjny dla łącznych ≤10 s — do kalibracji na animatiku.
+1. Spójność stylu: generować wszystkie panele w jednej sesji / z tym samym prefiksem stylu; ewentualnie dodać do promptu „same character design as previous panel".
+2. Napisy i dialogi nie powinny być renderowane w obrazkach (modele psują litery) — dialogi trzymamy w opisach pod panelami, tekst planszy wchodzi w poście.
+3. Timing jest orientacyjny dla łącznych ≤10 s — do kalibracji na animatiku.
