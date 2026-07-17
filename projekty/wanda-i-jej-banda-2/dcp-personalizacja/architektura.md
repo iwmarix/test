@@ -12,7 +12,12 @@ Status: **propozycja architektury do akceptacji — przed implementacją**.
 - **2026-07-17 — DCP bez szyfrowania** (brak KDM). Konsekwencje: licencja easyDCP
   niepotrzebna; eksport przez Resolve Studio (natywnie) lub DCP-o-matic; upraszcza
   ingest w kinach i eliminuje cały wątek generowania/dystrybucji kluczy KDM.
-- Do rozstrzygnięcia po pilotażu: wariant A (pełne DCP) vs B (OV+VF) — patrz §2.
+- **2026-07-17 — wariant A: pełne DCP per kino** (kin będzie mniej niż 200).
+  Konsekwencje: każde kino dostaje jedną samodzielną paczkę (najprostszy ingest);
+  DCP-o-matic i podział na rolki niepotrzebne; trzeba zaplanować przestrzeń dyskową
+  i czas enkodowania proporcjonalnie do finalnej liczby kin (~100–140 GB i ~1–2 h
+  na kopię). Wariant B (OV+VF, §2) zostaje w dokumencie jako plan awaryjny, gdyby
+  skala jednak urosła.
 
 ---
 
@@ -67,9 +72,10 @@ dwóch paczek i wyboru wersji z VF); Resolve nie autoruje OV/VF — trzeba uży�
 **DCP-o-matic** (obsługuje VF) lub easyDCP. Wymaga testu ingestu w 2–3 kinach
 przed decyzją.
 
-**Rekomendacja:** MVP zbudować tak, by ostatni etap (DCP) był wymienny — moduł
-`dcp_builder` z dwoma backendami (Resolve-full / DCP-o-matic-VF). Decyzję podjąć po
-pilotażu na 3 kinach.
+**Rozstrzygnięcie (2026-07-17): wariant A** — kin będzie mniej niż 200, więc
+prostota ingestu wygrywa z oszczędnością wolumenu. Moduł `dcp_builder` i tak
+projektujemy z wymiennym backendem (Resolve-full jako jedyny implementowany;
+DCP-o-matic-VF opisany jako plan awaryjny na wypadek wzrostu skali).
 
 ---
 
@@ -324,8 +330,7 @@ ale osobne nry i osobne DCP (albo świadoma deduplikacja — flaga w arkuszu).
 **Faza 4 — Resolve + DCP**
 - `resolve_conform` + `dcp_builder` (backend A) + `qc` (Clairmeta).
 - Test: 3 pełne DCP, walidacja, **ingest w prawdziwym kinie / na serwerze kinowym**.
-- Równolegle: próba backendu B (OV+VF w DCP-o-matic) i test ingestu OV+VF —
-  decyzja wariantu przed skalowaniem.
+- (Wariant rozstrzygnięty na A — próba OV+VF tylko, gdyby skala urosła.)
 
 **Faza 5 — przebieg zbiorczy**
 - Pełny run 3 kin bez dotykania czegokolwiek poza panelem akceptacji.
@@ -377,8 +382,10 @@ DCP-o-matic (CLI); dostęp do Adobe Firefly Services (klucz API).
    mniejsze miasta bez ikonicznej panoramy. Mitygacja: stała maska, stałe parametry,
    człowiek w pętli, fallback ręczny. Osobno: **prawa do referencji** panoram.
 2. **Zarządzanie barwą na szwie** AE→Resolve→XYZ — test sklejki w pilotażu.
-3. **Wolumen i czas** przy 200 pełnych DCP (17–28 TB, 250–400 h enkodowania) —
-   stąd wariant OV+VF jako realna alternatywa.
+3. **Wolumen i czas** pełnych DCP (~100–140 GB i ~1–2 h enkodowania na kopię) —
+   po decyzji na wariant A trzeba policzyć dyski i harmonogram enkodowania dla
+   finalnej liczby kin; przy dużej liczbie ratunkiem jest druga stacja lub
+   powrót do wariantu OV+VF.
 4. **Kruchość API Resolve** przy edycji timeline — omijana wzorcem stałej ścieżki.
 5. **Zgodność ingestu w kinach** (SMPTE vs Interop, OV+VF) — test na prawdziwym
    serwerze kinowym w fazie 4, przed skalowaniem.
