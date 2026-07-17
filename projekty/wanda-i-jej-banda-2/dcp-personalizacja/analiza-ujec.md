@@ -82,6 +82,29 @@ różowe chmury. Panoramy per miasto muszą znieść oba gradingi.
       na projekcie warstwowym)?
 - [ ] Timecode'y obu ujęć w masterze filmu (do konformu w Resolve).
 
+## Stan prac (2026-07-17)
+
+**Wstrzymane na kilka dni** — studio przygotowuje wzorcową maskę i plik AE;
+trwają testy, czy podkładanie panoramy dobrze wygląda w ruchu. Implementacja
+(Faza 1) ruszy po otrzymaniu materiałów.
+
+### Na co patrzeć przy testach ruchu (typowe miejsca „pękania" podmiany)
+
+- **Paralaksa na krawędziach** — czy panorama przesuwa się odrobinę wolniej
+  niż korony drzew (miasto jest dalej); jeśli plansza jest przypięta na
+  sztywno do drzew, ruch zdradzi podmianę.
+- **Dryf skali w uj. 2** — przy opadaniu kamery miasto nie powinno zauważalnie
+  rosnąć/maleć (jest daleko); jeśli rośnie, plansza wisi za blisko kamery
+  w przestrzeni 3D kompozycji.
+- **Mgiełka u podstawy zabudowy** — czy leży NAD warstwą panoramy i czy
+  zlewa się z nią tak samo w całym przebiegu ujęcia.
+- **Ptaki i balonik** — czy zawsze renderują się przed panoramą (kolejność
+  warstw stała w czasie).
+- **Sklejka z gradingiem** — podgląd obu ujęć z tą samą planszą: dzień
+  (uj. 1) i złota godzina (uj. 2); plansza neutralna powinna znieść oba.
+- **Końcówka uj. 1** — moment znikania panoramy za drzewami: żadnych
+  prześwitów planszy między liśćmi przy motion blur.
+
 ## Do pozyskania od Maćka (specyfikacja warstwy panoramy)
 
 - [ ] Wymiary planszy panoramy w px i jej pozycja/skala w obu kompozycjach
