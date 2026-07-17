@@ -12,6 +12,12 @@ Status: **propozycja architektury do akceptacji — przed implementacją**.
 - **2026-07-17 — DCP bez szyfrowania** (brak KDM). Konsekwencje: licencja easyDCP
   niepotrzebna; eksport przez Resolve Studio (natywnie) lub DCP-o-matic; upraszcza
   ingest w kinach i eliminuje cały wątek generowania/dystrybucji kluczy KDM.
+- **2026-07-17 — personalizacja dotyczy DWÓCH ujęć** (nie jednego): otrzymano
+  podglądy `WANDA1_panorama_1.mp4` (8,9 s) i `WANDA1_panorama_2.mp4` (13,5 s) —
+  łącznie ~22,4 s / 538 klatek renderu AE na miasto. Kamera porusza się w obu
+  ujęciach, przed panoramą są okluzje (drzewa, mgiełka, ptaki) — podmiana musi
+  odbywać się na warstwie w projekcie AE, nie na gotowym wideo. Szczegóły:
+  `analiza-ujec.md`.
 - **2026-07-17 — wariant A: pełne DCP per kino** (kin będzie mniej niż 200).
   Konsekwencje: każde kino dostaje jedną samodzielną paczkę (najprostszy ingest);
   DCP-o-matic i podział na rolki niepotrzebne; trzeba zaplanować przestrzeń dyskową
