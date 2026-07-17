@@ -7,6 +7,13 @@ Warszawy.
 
 Status: **propozycja architektury do akceptacji — przed implementacją**.
 
+## Decyzje podjęte
+
+- **2026-07-17 — DCP bez szyfrowania** (brak KDM). Konsekwencje: licencja easyDCP
+  niepotrzebna; eksport przez Resolve Studio (natywnie) lub DCP-o-matic; upraszcza
+  ingest w kinach i eliminuje cały wątek generowania/dystrybucji kluczy KDM.
+- Do rozstrzygnięcia po pilotażu: wariant A (pełne DCP) vs B (OV+VF) — patrz §2.
+
 ---
 
 ## 1. Czy to wykonalne przy użyciu Claude Code / Codex?
@@ -299,8 +306,8 @@ ale osobne nry i osobne DCP (albo świadoma deduplikacja — flaga w arkuszu).
   Rzeszów — średnia, mała miejscowość bez charakterystycznej panoramy).
 - Przygotowanie: maska panoramy, szablon AE ze slotem na stałej ścieżce,
   projekt wzorcowy Resolve, 3 referencje.
-- Decyzje: szyfrowanie DCP (tak/nie), SMPTE 2K 24 fps (potwierdzić z masterem),
-  wstępnie wariant A vs B z §2.
+- Decyzje: ~~szyfrowanie DCP~~ (rozstrzygnięte: bez szyfrowania), SMPTE 2K 24 fps
+  (potwierdzić z masterem), wstępnie wariant A vs B z §2.
 
 **Faza 1 — kręgosłup danych**
 - Moduły: `excel_io`, `state` (SQLite, maszyna stanów), CLI `pipeline status/run`.
@@ -375,5 +382,5 @@ DCP-o-matic (CLI); dostęp do Adobe Firefly Services (klucz API).
 4. **Kruchość API Resolve** przy edycji timeline — omijana wzorcem stałej ścieżki.
 5. **Zgodność ingestu w kinach** (SMPTE vs Interop, OV+VF) — test na prawdziwym
    serwerze kinowym w fazie 4, przed skalowaniem.
-6. **Licencje**: Resolve Studio (wymagane), easyDCP tylko przy szyfrowaniu,
-   Firefly Services (koszty generowania ~200+ obrazów z iteracjami).
+6. **Licencje**: Resolve Studio (wymagane), Firefly Services (koszty generowania
+   ~200+ obrazów z iteracjami). easyDCP zbędny — DCP bez szyfrowania (decyzja).
