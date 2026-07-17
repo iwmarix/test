@@ -111,6 +111,14 @@ Poniżej przy każdym ujęciu podaję gotowy prompt **już z prefiksem** — wys
 
 ---
 
+## Wygenerowane klatki (wersja robocza)
+
+Robocze klatki storyboardu (szkic „ołówkowy", czarno-biały, 16:9 + pasek opisu ujęcia)
+leżą w `storyboard/ujecie-01.png` … `ujecie-07.png`. Zostały narysowane wektorowo
+(SVG stylizowane na ołówek) — generacja Firefly text-to-image nie była dostępna
+w środowisku; powyższe prompty pozostają gotowe do użycia w Adobe Firefly / innym
+generatorze, gdy będzie potrzebna wersja o bogatszym rysunku.
+
 ## Notatki produkcyjne
 
 1. Spójność stylu: generować wszystkie panele w jednej sesji / z tym samym prefiksem stylu; ewentualnie dodać do promptu „same character design as previous panel".
