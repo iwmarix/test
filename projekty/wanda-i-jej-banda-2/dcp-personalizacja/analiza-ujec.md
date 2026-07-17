@@ -71,11 +71,25 @@ różowe chmury. Panoramy per miasto muszą znieść oba gradingi.
 
 ## Do potwierdzenia ze studiem
 
-- [ ] Czy istnieje warstwowy projekt AE obu ujęć z panoramą jako osobną
-      warstwą/precompem? (warunek konieczny pipeline'u)
+- [x] ~~Czy istnieje warstwowy projekt AE obu ujęć z panoramą jako osobną
+      warstwą/precompem?~~ **POTWIERDZONE 2026-07-17**: kompozycje AE
+      z panoramą za drzewami jako osobną warstwą istnieją (autor: Maciek).
+      Warunek konieczny pipeline'u spełniony — bez rotoskopii.
 - [ ] Rozdzielczość i przestrzeń barwna finalnego mastera (podglądy są
       1920×1080; DCP flat to 1998×1080 — co jest źródłem?)
 - [ ] Czy odbicie panoramy pojawia się w wodzie jeziora w którymkolwiek
       ujęciu w pełnej jakości (w podglądach niewidoczne, ale do weryfikacji
       na projekcie warstwowym)?
 - [ ] Timecode'y obu ujęć w masterze filmu (do konformu w Resolve).
+
+## Do pozyskania od Maćka (specyfikacja warstwy panoramy)
+
+- [ ] Wymiary planszy panoramy w px i jej pozycja/skala w obu kompozycjach
+      (czy jedna warstwa/precomp jest współdzielona przez oba ujęcia?).
+- [ ] Eksport obecnej planszy Warszawy jako PNG w pełnej rozdzielczości —
+      posłuży jako wzorzec formatu (rozmiar, linia horyzontu, strefa krycia
+      drzewami) i referencja stylu dla generowania pozostałych miast.
+- [ ] Czy warstwa panoramy ma stałą interpretację koloru (sRGB/ACES?) —
+      żeby wygenerowane plansze wpinały się bez przesunięć barwnych.
+- [ ] Zgoda na drobną modyfikację projektu: przepięcie źródła warstwy na
+      stały plik `work/current_panorama.png` (slot pipeline'u).
